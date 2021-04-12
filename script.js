@@ -6,6 +6,8 @@ const userInput = document.getElementById('user-input')
 const addBtn = document.getElementById('add-btn')
 const orderList = document.getElementById('order-list')
 const clrBtn = document.getElementById('clear-btn')
+const currentOrder = document.getElementById('current_order')
+
 
 // Initialize an empty array to store product objects from inventory
 let shoppingCart = [];
@@ -20,6 +22,8 @@ function init(){
 	shoppingCart = [];
 	orderList.innerHTML = '';
 	orderDetails.classList.remove('visible')
+	currentOrder.classList.remove('visible')
+
 }
 
 
@@ -39,12 +43,12 @@ function addDrinkToOrder(e) {
 			if (item.name === inputItem) {
 				shoppingCart.push(item);				
         addOrderToDOM(item.name)
-        error = false;
+		error = false;
 				console.log(shoppingCart)
 			}
 		});
 	}
-  if (error) alert(`sorry we don't carry ${inputItem}`);
+  if (error) alert(`Sorry, we don't carry ${inputItem}.`);
 	userInput.value = ''
 }
 
@@ -56,6 +60,9 @@ function addOrderToDOM(drink){
  const item = document.createElement("li");
  item.innerHTML = drink;
  orderList.appendChild(item);
+// show current order in the front end
+currentOrder.classList.add('visible')
+
 }
 
 
