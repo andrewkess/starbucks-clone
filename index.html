@@ -10,12 +10,6 @@
 
 <body>
 		<h1>Order Some Coffee</h1>
-		<h3>Current Order:</h3>
-		<ul id="order-list">
-			<!-- <li>latte</li>
-			<li>coffee</li>
-			<li>cappiccuno</li> -->
-		</ul>
 
 		<div class="row">
 			<label for="user-input"></label>
@@ -27,9 +21,21 @@
 
 <hr>
 
-			<h3>Order Details</h3>	
-			<div id="order_details" class="order-details">
 
+<div id="current_order" class="current-order">
+	<h3>Current Order:</h3>
+	<ul id="order-list">
+		<!-- <li>latte</li>
+		<li>coffee</li>
+		<li>cappiccuno</li> -->
+	</ul>
+	</div>
+
+
+
+			<div id="order_details" class="order-details">
+				<img src="https://media.giphy.com/media/SXYzrULEUKRwz8Jtab/giphy.gif" class="coffee-mug">
+				<h3>Order Details</h3>	
 
 			<div class="row">
 				<h4>Total Cost:</h4>&nbsp;$
@@ -40,11 +46,13 @@
 				<span id="total-time"></span>&nbsp;
 				<span> minutes</span>	
 			</div>
-			</div>
+
+			<div align="center"><button id="clear-btn" class="clear-button">Make A New Order</button></div>
+
+		</div>
 
 
 
-	<button id="clear-btn">Make A New Order</button>
 
 		
 		<script src="inventory.js" ></script>
