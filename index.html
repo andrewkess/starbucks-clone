@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+		<h1>Order Some Coffee</h1>
+		<h3>Current Order:</h3>
+		<ul id="order-list">
+			<!-- <li>latte</li>
+			<li>coffee</li>
+			<li>cappiccuno</li> -->
+		</ul>
+
+		<div class="row">
+			<label for="user-input"></label>
+			<input id="user-input" type="text" placeholder="Enter drinks to order">
+			<button id="add-btn">Add to order</button>
+		</div>
+
+		<button id="order-btn">Place order</button>
+
+<hr>
+
+			<h3>Order Details</h3>	
+			<div id="order_details" class="order-details">
+
+
+			<div class="row">
+				<h4>Total Cost:</h4>&nbsp;$
+				<span id="total-price"></span>	&nbsp;
+			</div>
+			<div class="row">
+				<h4>Time To Complete:</h4>&nbsp;
+				<span id="total-time"></span>&nbsp;
+				<span> minutes</span>	
+			</div>
+			</div>
+
+
+
+	<button id="clear-btn">Make A New Order</button>
+
+		
+		<script src="inventory.js" ></script>
+    <script src="script.js"  ></script>
+
+  </body>
+</html>

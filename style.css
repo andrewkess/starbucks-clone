@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.row {
+	display: flex;
+	padding: 4px;
+	align-items: center;
+}
+
+.order-details {
+  	display: none;
+}
+
+.visible {
+	display: block;
+}
